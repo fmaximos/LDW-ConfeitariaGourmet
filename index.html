@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="imagex/png" href="imagens/confeitaria.ico">
+  <title>Camila Ferreira Confeitaria</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-left">
+      <img src="imagens/logo-confeitaria.png" alt="Logo Doces" height="50">
+      <!-- <nav>
+      </nav> -->
+    </div>
+    <nav class="nav-right">
+      <a href="#inicio" class="btn-nav alternado">Início</a>
+      <div class="dropdown alternado">
+        <a href="#produtos">Produtos</a>
+        <div class="dropdown-content">
+          <a href="#" data-produto="produtoTrufaGourmet">Trufas gourmet</a>
+          <a href="#" data-produto="produtoBombomFino">Bombons finos</a>
+          <a href="#" data-produto="produtoBrigadeiro">Brigadeiria</a>
+          <a href="#" data-produto="produtoDocesNobres">Doces nobres</a>
+          <a href="#" data-produto="produtoBombonsEtilicos">Bombons etílicos</a>
+          <a href="#" data-produto="produtoBolo">Bolos</a>
+        </div>
+      </div>
+      <a href="#pagamento" class="btn-nav alternado">Formas de Pagamento</a>
+      <a href="#orcamento" class="btn-nav alternado">Orçamento</a>
+      <a href="#receitas" class="btn-nav alternado">Receitas</a>
+    </nav>
+  </header>
+  
+
+<main>
+  <section id="inicio" class="fade-in">
+    <div class="intro-grid">
+      <div class="intro-box">
+        <h2 class="intro-title">Bolos, brigadeiros e outros doces gourmet você encontra aqui</h2>
+        <p class="intro-subtitle">
+          Acesse nossa cartilha de produtos, faça seu pedido online ou descubra receitas incríveis em nosso blog exclusivo!
+        </p>
+        <div class="intro-buttons">
+          <a href="#sobre" class="btn-saiba-mais">Saiba mais</a>
+          <a href="#orcamento" class="btn-faca-pedido">Faça seu orçamento</a>
+        </div>
+      </div>
+      <img src="imagens/confeitariahome.png" alt="Doces Ilustrados">
+    </div>
+  </section>  
+
+  <div class="divider"></div>
+
+  <section id="sobre" class="sobre-section">
+    <h2 class="sobre-titulo">Um pouco sobre o sonho...</h2>
+    <p class="sobre-texto">
+      A minha história com doces começou quando tinha doze anos, quando minha avó me ensinou a fazer bolos e desde então, soube que queria abrir minha própria confeitaria. Até que um ano atrás, consegui finalmente realizar esse sonho. Comecei com encomendas pelo WhatsApp e Instagram, mas com a demanda crescente, percebi que meu respeito e carinho por esse trabalho também era sentido pelo meu público e segui com força total. Nosso objetivo é fazer bolos e doces deliciosos e com muito amor para alegrar o seu dia e tornar seus eventos muito especiais.
+    </p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="produtos" class="fade-in" style="display: block;">
+    <h2>Conheça nossos produtos</h2>
+    <div class="grid-produtos">
+      <div class="produto">
+        <h3>Trufas gourmet</h3>
+        <img src="imagens/trufagourmet.jpg" alt="Brigadeiro">
+        <p>Diversos sabores, confira clicando.</p>
+      </div>
+      <div class="produto">
+        <h3>Bombons finos</h3>
+        <img src="imagens/bombonsfinos.jpg" alt="Doces Ilustrados">
+        <p>Diversos sabores, confira clicando.</p>
+      </div>
+      <div class="produto">
+        <h3>Brigadeiria</h3>
+        <img src="imagens/brigadeiro.jpg" alt="Doces Ilustrados">
+        <p>Diversos sabores, confira clicando.</p>
+      </div>
+      <div class="produto">
+        <h3>Doces nobres</h3>
+        <img src="imagens/docesnobres.jpg" alt="Doces Ilustrados">
+        <p>Diversos sabores, confira clicando.</p>
+      </div>
+      <div class="produto">
+        <h3>Bombons etílicos</h3>
+        <img src="imagens/bombonseticos.jpg" alt="Doces Ilustrados">
+        <p>Diversos sabores, confira clicando.</p>
+      </div>
+      <div class="produto">
+        <h3>Bolos</h3>
+        <img src="imagens/bolos.jpg" alt="Doces Ilustrados">
+        <p>Diversos sabores, confira clicando.</p>
+      </div>
+    </div>
+  </section>
+  <section id="produtosSabor" class="fade-in produto-detalhe produtoTrufaGourmet" style="display: none;">
+    <h2>Trufas Gourmet</h2>
+    <div class="grid-produtos">
+      <div class="produtoSabores">
+        <h3>Trufa de Chocolate Meio Amargo com Licor</h3>
+        <!-- <img src="imagens/trufagourmet.jpg" alt="Brigadeiro"> -->
+        <p>MacRecheio intenso com um toque alcoólico suave.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Trufa de Morango com Chocolate Branco</h3>
+        <!-- <img src="imagens/bombonsfinos.jpg" alt="Doces Ilustrados"> -->
+        <p>Recheio cremoso de morango coberto com chocolate branco belga.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Trufa de Maracujá com Ganache de Chocolate</h3>
+        <!-- <img src="imagens/brigadeiro.jpg" alt="Doces Ilustrados"> -->
+        <p>Recheio cítrico e refrescante, perfeito para dias quentes.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Trufa de Limão Siciliano</h3>
+        <!-- <img src="imagens/docesnobres.jpg" alt="Doces Ilustrados"> -->
+        <p>Um toque sofisticado e levemente ácido.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Trufa de Nutella com Avelãs</h3>
+        <!-- <img src="imagens/bombonseticos.jpg" alt="Doces Ilustrados"> -->
+        <p>Recheio cremoso e crocante, um verdadeiro sucesso.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Trufa de Café com Chocolate 70%</h3>
+        <!-- <img src="imagens/bolos.jpg" alt="Doces Ilustrados"> -->
+        <p>Ideal para os amantes de café com gosto marcante.</p>
+      </div>
+    </div>
+    <button onclick="voltarCatalogo()" class="btnVoltar">Voltar para catálogo</button>
+  </section>
+  <section id="produtosSabor" class="fade-in produto-detalhe produtoBombomFino" style="display: none;">
+    <h2>Bombons Finos</h2>
+    <div class="grid-produtos">
+      <div class="produtoSabores">
+        <h3>Bombom de Nozes com Chocolate Belga</h3>
+        <!-- <img src="imagens/trufagourmet.jpg" alt="Brigadeiro"> -->
+        <p>Recheio artesanal de nozes frescas.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Bombom de Damasco com Cream Cheese</h3>
+        <!-- <img src="imagens/bombonsfinos.jpg" alt="Doces Ilustrados"> -->
+        <p>Sabor suave e agridoce, coberto com chocolate branco.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Bombom de Pistache com Praliné</h3>
+        <!-- <img src="imagens/brigadeiro.jpg" alt="Doces Ilustrados"> -->
+        <p>Requintado, com crocância e sabor único.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Bombom de Amarena com Ganache Branca</h3>
+        <!-- <img src="imagens/docesnobres.jpg" alt="Doces Ilustrados"> -->
+        <p>Recheio frutado e levemente ácido.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Bombom de Castanha-do-Pará com Caramelo Salgado</h3>
+        <!-- <img src="imagens/bombonseticos.jpg" alt="Doces Ilustrados"> -->
+        <p>Um equilíbrio perfeito entre doce e salgado.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Bombom de Frutas Vermelhas com Chocolate ao Leite</h3>
+        <!-- <img src="imagens/bolos.jpg" alt="Doces Ilustrados"> -->
+        <p>Mistura irresistível de morango, framboesa e amora.</p>
+      </div>
+    </div>
+    <button onclick="voltarCatalogo()" class="btnVoltar">Voltar para catálogo</button>
+  </section>
+  <section id="produtosSabor" class="fade-in produto-detalhe produtoBrigadeiro" style="display: none;">
+    <h2>Brigadeiria</h2>
+    <div class="grid-produtos">
+      <div class="produtoSabores">
+        <h3>Brigadeiro Tradicional Gourmet</h3>
+        <!-- <img src="imagens/trufagourmet.jpg" alt="Tradicional"> -->
+        <p>Feito com chocolate belga e finalizado com granulado belga.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Brigadeiro de Leite Ninho com Nutella</h3>
+        <!-- <img src="imagens/bombonsfinos.jpg" alt="BombomFino"> -->
+        <p>Cremoso por dentro e polvilhado com leite em pó.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Brigadeiro de Pistache com Chocolate Branco</h3>
+        <!-- <img src="imagens/brigadeiro.jpg" alt="Pistache"> -->
+        <p>Toque leve e sofisticado.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Brigadeiro de Limão com Raspas Cítricas</h3>
+        <!-- <img src="imagens/docesnobres.jpg" alt="Doces Ilustrados"> -->
+        <p>Refrescante e equilibrado.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Brigadeiro de Paçoca Crocante</h3>
+        <!-- <img src="imagens/bombonseticos.jpg" alt="Doces Ilustrados"> -->
+        <p>Para quem ama um docinho brasileiro.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Brigadeiro de Oreo com Ganache Escura</h3>
+        <!-- <img src="imagens/bolos.jpg" alt="Doces Ilustrados"> -->
+        <p>Crocante por fora, cremoso por dentro.</p>
+      </div>
+    </div>
+    <button onclick="voltarCatalogo()" class="btnVoltar">Voltar para catálogo</button>
+  </section>
+  <section id="produtosSabor" class="fade-in produto-detalhe produtoDocesNobres" style="display: none;">
+    <h2>Doces Nobres</h2>
+    <div class="grid-produtos">
+      <div class="produtoSabores">
+        <h3>Camafeu de Nozes</h3>
+        <!-- <img src="imagens/trufagourmet.jpg" alt="Brigadeiro"> -->
+        <p>Recheio tradicional de nozes com cobertura de fondant branco e decoração elegante.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Bem-Casado com Doce de Leite</h3>
+        <!-- <img src="imagens/bombonsfinos.jpg" alt="Doces Ilustrados"> -->
+        <p>Massa leve e recheio generoso, finalizado com açúcar de confeiteiro.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Tartelete de Limão com Merengue Italiano</h3>
+        <!-- <img src="imagens/brigadeiro.jpg" alt="Doces Ilustrados"> -->
+        <p>Massa crocante, recheio cremoso e finalização sofisticada.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Quindim de Coco com Toque de Baunilha</h3>
+        <!-- <img src="imagens/docesnobres.jpg" alt="Doces Ilustrados"> -->
+        <p>Brilho intenso e sabor inconfundível, servido em porções individuais.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Mini Pudim de Leite Condensado</h3>
+        <!-- <img src="imagens/bombonseticos.jpg" alt="Doces Ilustrados"> -->
+        <p>Clássico brasileiro com calda de caramelo artesanal.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Trouxinha de Fios de Ovos com Recheio</h3>
+        <!-- <img src="imagens/bolos.jpg" alt="Doces Ilustrados"> -->
+        <p>Um doce refinado de inspiração portuguesa, com apresentação delicada.</p>
+      </div>
+    </div>
+    <button onclick="voltarCatalogo()" class="btnVoltar">Voltar para catálogo</button>
+  </section>
+  <section id="produtosSabor" class="fade-in produto-detalhe produtoBombonsEtilicos" style="display: none;">
+    <h2>Bombons Etílicos</h2>
+    <div class="grid-produtos">
+      <div class="produtoSabores">
+        <h3>Bombom de Whisky com Ganache Amarga</h3>
+        <!-- <img src="imagens/trufagourmet.jpg" alt="Brigadeiro"> -->
+        <p>Recheio marcante e adulto.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Bombom de Vinho Tinto com Chocolate</h3>
+        <!-- <img src="imagens/bombonsfinos.jpg" alt="Doces Ilustrados"> -->
+        <p>Perfeito para harmonizar com queijos finos..</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Bombom de Amarula com Chocolate Branco</h3>
+        <!-- <img src="imagens/brigadeiro.jpg" alt="Doces Ilustrados"> -->
+        <p>Suave e irresistível.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Bombom de Rum com Frutas Secas</h3>
+        <!-- <img src="imagens/docesnobres.jpg" alt="Doces Ilustrados"> -->
+        <p>Sabor tropical e intenso.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Bombom de Cerveja Stout com Caramelo</h3>
+        <!-- <img src="imagens/bombonseticos.jpg" alt="Doces Ilustrados"> -->
+        <p>Combinação ousada e surpreendente.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Bombom de Licor de Café com Chocolate 70%</h3>
+        <!-- <img src="imagens/bolos.jpg" alt="Doces Ilustrados"> -->
+        <p>Elegância e sabor para paladares exigentes.</p>
+      </div>
+    </div>
+    <button onclick="voltarCatalogo()" class="btnVoltar">Voltar para catálogo</button>
+  </section>
+  <section id="produtosSabor" class="fade-in produto-detalhe produtoBolo" style="display: none;">
+    <h2>Bolos</h2>
+    <div class="grid-produtos">
+      <div class="produtoSabores">
+        <h3>Bolo Red Velvet com Cream Cheese</h3>
+        <!-- <img src="imagens/trufagourmet.jpg" alt="Brigadeiro"> -->
+        <p>Macio, levemente ácido e com cobertura clássica.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Bolo de Chocolate Trufado</h3>
+        <!-- <img src="imagens/bombonsfinos.jpg" alt="Doces Ilustrados"> -->
+        <p>Massa intensa com recheio de ganache.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Bolo de Leite Ninho com Morangos Frescos</h3>
+        <!-- <img src="imagens/brigadeiro.jpg" alt="Doces Ilustrados"> -->
+        <p>Um clássico moderno, leve e saboroso.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Bolo de Cenoura com Calda de Brigadeiro</h3>
+        <!-- <img src="imagens/docesnobres.jpg" alt="Doces Ilustrados"> -->
+        <p>Aquele bolo da infância com um toque gourmet.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Bolo de Nozes com Baba de Moça</h3>
+        <!-- <img src="imagens/bombonseticos.jpg" alt="Doces Ilustrados"> -->
+        <p>Sofisticação e tradição em camadas.</p>
+      </div>
+      <div class="produtoSabores">
+        <h3>Bolo Gelado de Coco com Leite Condensado</h3>
+        <!-- <img src="imagens/bolos.jpg" alt="Doces Ilustrados"> -->
+        <p>Um favorito para servir geladinho em festas.</p>
+      </div>
+    </div>
+    <button onclick="voltarCatalogo()" class="btnVoltar">Voltar para catálogo</button>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="pagamento" class="fade-in">
+    <h2>Formas de Pagamento</h2>
+    <ul>
+      <li>Cartão de crédito (Visa, MasterCard, etc)</li>
+      <li>Boletos ou Pix</li>
+      <li>Carteiras digitais: PayPal, Google Pay, Apple Pay</li>
+    </ul>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="orcamento" class="fade-in">
+    <h2>Faça seu orçamento conosco</h2>
+    <form>
+      <input type="text" placeholder="Nome e sobrenome" required>
+      <input type="text" placeholder="Telefone de contato" required>
+      <input type="email" placeholder="Email de contato" required>
+      <input type="text" placeholder="Endereço de entrega">
+      <input type="text" placeholder="Selecione os itens que deseja adquirir">
+      <input type="text" placeholder="Informe a data do evento (se aplicável)">
+      <textarea type="text" placeholder="Informe as quantidades e demais observações"></textarea>
+      <button type="submit" class="btn">Solicitar Orçamento</button>
+    </form>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="receitas" class="fade-in">
+    <h2>Receitas especiais</h2>
+    <div class="receita">
+        <h3>Brigadeiro gourmet</h3>
+        <img src="imagens/brigadeiro-gourmet.png" alt="Doces Ilustrados" style="max-width: 300px;">
+      <p><b>Rende:</b> 30 a 40 porções</p>
+      <p><b>Tempo:</b> 60 minutos<span>🕒</span></p><br>
+      <p><b>Ingredientes:</b></p>
+        <ul>
+          <li>395 gramas de leite condensado (com 6 a 8% de gordura)</li>
+          <li>200 gramas de creme de leite (com no mínimo 17% de gordura)</li>
+          <li>20 gramas de chocolate em pó 50% cacau</li>
+          <li>80 gramas de Cobertura TOP Blend em Gotas</li>
+          <li>Granulado/confeito de chocolate belga (de alta qualidade)</li>
+      </ul>
+      <p><b>Modo de preparo:</b></p>
+      <ul>
+        <li>Reúna todos os ingredientes;</li>
+        <li>Em uma panela, coloque o leite condensado e o chocolate em pó. Misture até o chocolate dissolver bem;</li>
+        <li>Adicione o creme de leite e leve ao fogo alto, mexendo sem parar (passe para o fogo médio quando o brigadeiro começar a engrossar);</li>
+        <li>Assim que começar a engrossar, desligue o fogo e acrescente a cobertura em gotas;</li>
+        <li>Misture, ligue o fogo novamente, em fogo baixo, e mexa até o brigadeiro desgrudar completamente do fundo da panela;</li>
+        <li>Desligue o fogo e, com o auxílio de um fouet, mexa bem para desmanchar os gruminhos;</li>
+        <li>Passe o brigadeiro para um prato forrado com plástico filme;</li>
+        <li>Embrulhe a massa do brigadeiro no plástico filme (deixe ele bem aderente e sem bolhas de ar) e leve para descansar por, no mínimo, 6 horas (pode ser na geladeira);</li>
+        <li>Desembrulhe a massa e mexa um pouco com ela (como se fosse sovar na mão);</li>
+        <li>Pegue uma pequena porção, molde uma bolinha e passe no granulado. Repita o processo com o restante da massa;</li>
+        <li>Agora é só servir. Bom apetite!</li>
+    </ul>
+    </div>
+
+    <div class="receita">
+      <h3>Bolo Gelado de Coco Gourmet</h3>
+      <img src="imagens/bolo-gelado-de-coco-gourmet.png" alt="Doces Ilustrados" style="max-width: 300px;">
+      <p><b>Rende:</b> 13 fatias</p>
+      <p><b>Tempo:</b> 80 minutos(20 minutos para preparo, e 60 no fogo/fogão) <span>🕒</span></p><br>
+      <p><b>Ingredientes para Massa:</b></p>
+      <ul>
+        <li>4 ovos médios</li>
+        <li>1 pote de iogurte integral (170 gramas)</li>
+        <li>1 copo de iogurte de óleo (180 ml)</li>
+        <li>270 gramas de açúcar</li>
+        <li>1 e 1/2 xícara de chá de farinha de trigo</li>
+        <li>1/3 de xícara de coco ralado</li>
+        <li>1 colher de sopa de fermento químico em pó (fermento para bolo)</li>
+      </ul>
+      <p><b>Ingredientes para Cobertura:</b></p>
+      <ul>
+        <li>150 gramas de leite condensado</li>
+        <li>50 gramas de leite de coco</li>
+        <li>100 gramas de glaçúcar</li>
+        <li>75 gramas de leite em pó</li>
+        <li>30 gramas de coco ralado seco</li>
+      </ul>
+      <p><b>Modo de preparo:</b></p>
+      <ul>
+        <li>Separe os ingredientes e certifique-se de que todos estão em temperatura ambiente para garantir uma textura uniforme. Preaqueça o forno a 180 °C e unte uma forma redonda de 20x20 com manteiga e farinha;</li>
+        <li>Para a massa, em uma tigela, coloque o óleo e o iogurte. Quebre os ovos um por vez em um potinho pequeno, e se estiverem bons incorpore-os a tigela. Bata com um fouet (batedor de arame) até que fique homogêneo;</li>
+        <li>Peneire o açúcar por cima da mistura. Em seguida, peneire a farinha de trigo, aos poucos, misturando delicadamente até incorporar totalmente. Junte o fermento e mexa rapidamente até que se dissolva;</li>
+        <li>Despeje a massa na forma preparada e leve ao forno por cerca de 60 minutos ou até que um palito inserido no centro saia limpo;</li>
+        <li>Para a cobertura, em uma vasilha, coloque o leite condensado, leite de coco, glaçucar e leite em pó. Misture bem e leve ao microondas por 30 segundos;</li>
+        <li>Retire do microondas, misture e leve novamente por mais 30 segundos. Após esse tempo, misture bem. Se a cobertura ainda não estiver lisa e saindo da espátula em forma de fio, retorne ao microondas por mais 30 segundos. Despeje no bolo;</li>
+        <li>Salpique o coco ralado e espere a cobertura secar para servir. Está pronto. Aproveite!</li>
+      </ul>
+    </div>
+
+    <div class="receita">
+      <h3>Taça Gourmet</h3>
+      <img src="imagens/taca-gourmet.png" alt="Doces Ilustrados" style="max-width: 300px;">
+      <p><b>Rende:</b> 1 taça</p>
+      <p><b>Tempo:</b> 30 minutos<span>🕒</span></p><br>
+      <p><b>Ingredientes:</b></p>
+      <ul>
+        <li>1/2 lata de leite condensado</li>
+        <li>1 colher de sopa de manteiga ou margarina</li>
+        <li>1 caixinha de creme de leite</li>
+        <li>5 colheres de sopa de chocolate derretido</li>
+        <li>8 morangos picados</li>
+        <li>5 cookies esfarelados</li>
+        <li>Raspas de chocolate a gosto</li>
+        <li>1 bola de sorvete de sua preferência</li>
+      </ul>
+      <p><b>Modo de preparo:</b></p>
+      <ul>
+        <li>Misture o leite condensado, a manteiga e 1/2 caixa de creme de leite.</li>
+        <li>Cozinhe em fogo baixo até soltar do fundo da panela e reserve.</li>
+        <li>Em seguida derreta o chocolate e adicione o restante do creme de leite.</li>
+        <li>Lave os morangos, pique e deixe secar.</li>
+        <li>Na taça coloque parte do creme branco, os morangos picados, os cookies esfarelados, o restante do creme branco e finalize com a ganache.</li>
+        <li>Decore com raspas de chocolate e 1 bola de sorvete.</li>
+        <li>Agora é só servir! Aproveite.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Camila Ferreira Confeitaria. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+  const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('appear');
+      appearOnScroll.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 50,
+          behavior: "smooth"
+        });
+      }
+    });
+  });
+
+  function mostrarDiv(idMostra, idEsconde) {
+      document.getElementById(idMostra).style.display = "block";
+      document.getElementById(idEsconde).style.display = "none";
+  }
+  function mostrarProduto(idProduto) {
+      // Esconde o catálogo
+      document.getElementById("catalogo").style.display = "none";
+
+      // Esconde todas as divs de produto
+      const produtos = document.getElementsByClassName("produto");
+      for (let i = 0; i < produtos.length; i++) {
+          produtos[i].style.display = "none";
+      }
+
+      // Mostra apenas a div do produto clicado
+      document.getElementById(idProduto).style.display = "block";
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    const botoesProdutos = document.querySelectorAll(".grid-produtos .produto");
+    const secoesDetalhe = document.querySelectorAll(".produto-detalhe");
+
+    const nomesClasses = [
+      "produtoTrufaGourmet",
+      "produtoBombomFino",
+      "produtoBrigadeiro",
+      "produtoDocesNobres",
+      "produtoBombonsEtilicos",
+      "produtoBolo"
+    ];
+
+    function mostrarProdutoPorClasse(classe) {
+      document.getElementById("produtos").style.display = "none";
+      secoesDetalhe.forEach(secao => secao.style.display = "none");
+
+      const secaoMostrar = document.querySelector("." + classe);
+      if (secaoMostrar) secaoMostrar.style.display = "block";
+    }
+
+    botoesProdutos.forEach((botao, index) => {
+      botao.addEventListener("click", function () {
+        mostrarProdutoPorClasse(nomesClasses[index]);
+      });
+    });
+
+    const linksMenu = document.querySelectorAll('.dropdown-content a[data-produto]');
+    linksMenu.forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const classeProduto = this.getAttribute("data-produto");
+        mostrarProdutoPorClasse(classeProduto);
+      });
+    });
+  });
+
+  function voltarCatalogo() {
+    document.getElementById("produtos").style.display = "block";
+    const secoesDetalhe = document.querySelectorAll(".produto-detalhe");
+    secoesDetalhe.forEach(secao => secao.style.display = "none");
+  }
+</script>
+
+</body>
+</html>

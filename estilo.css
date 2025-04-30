@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* === Reset básico === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  background-image: url('fundo-floral.png'); /* Adicione o arquivo floral aqui */
+  background-size: cover;
+  background-attachment: fixed;
+  color: #371A07;
+  line-height: 1.6;
+  padding-top: 80px;
+}
+
+/* Reset alternado */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  z-index: 999;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav a, .dropdown > a{
+  text-decoration: none;
+  color: #8B5E3C;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btnVoltar {
+  text-decoration: none;
+  color: #8B5E3C;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  border: 0px;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btnInicio {
+  text-decoration: none;
+  color: #8B5E3C;
+  background-color: #DCE2C1;
+  
+}
+
+/* Alterna cores FADADD e DCE2C1 */
+.btn-nav.alternado:nth-child(odd), .dropdown.alternado:nth-child(odd) > a {
+  background-color: #FADADD;
+}
+.btn-nav.alternado:nth-child(even), .dropdown.alternado:nth-child(even) > a, 
+.btnVoltar {
+  background-color: #DCE2C1;
+}
+
+nav a:hover, .dropdown > a:hover {
+  background-color: #FCD2CF;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #DCE2C1;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  z-index: 1;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #8B5E3C;
+  text-decoration: none;
+  background-color: #DCE2C1;
+  border-bottom: 1px solid #ccc;
+}
+
+.dropdown-content a:hover {
+  background-color: #FADADD;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* === Seções principais === */
+
+section {
+  padding: 90px 30px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #8B5E3C;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  color: #D4AF37;
+}
+
+#produtosSabor h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  color: #8B5E3C;
+}
+#produtosSabor p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  color: #8B5E3C;
+}
+
+#inicio{
+    text-align: center;
+}
+#produtos{
+    text-align: center;
+}
+#produtosSabor{
+  text-align: center;
+}
+
+/* === Intro com imagem === */
+.intro-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.intro-box {
+  background-color: rgba(250, 218, 221, 0.5); /* FADADD com 50% opacidade */
+  padding: 40px;
+  border-radius: 12px;
+  flex: 1;
+  width: 500px;
+  height: 550px;
+  text-align: left;
+  /* Alinhamento vertical */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #8B5E3C;
+  margin-bottom: 15px;
+}
+
+.intro-subtitle {
+  font-size: 16px;
+  color: #5c4a3d;
+  margin-bottom: 25px;
+}
+
+.intro-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-saiba-mais,
+.btn-faca-pedido {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-saiba-mais {
+  background-color: white;
+  color: #8B5E3C;
+}
+
+.btn-saiba-mais:hover,
+.btn-saiba-mais:focus,
+.btn-saiba-mais:active {
+  background-color: #DCE2C1;
+  color: #8B5E3C;
+}
+
+.btn-faca-pedido {
+  background-color: #8B5E3C;
+  color: white;
+}
+
+.btn-faca-pedido:hover,
+.btn-faca-pedido:focus,
+.btn-faca-pedido:active {
+  background-color: #DCE2C1;
+  color: #8B5E3C;
+}
+
+.intro-grid img {
+  width: 200px;
+  height: auto;
+  flex: 1;
+}
+
+/* === Saiba mais === */
+
+.sobre-section {
+  text-align: center;
+  padding: 80px 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sobre-titulo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 42px;
+  color: #8B5E3C;
+  margin-bottom: 16px; /* espaço menor entre o título e o texto */
+}
+
+.sobre-texto {
+  font-size: 18px;
+  color: #8B5E3C;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* === Produtos === */
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 20px;
+}
+#produtosSabor .grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 5px 20px;
+}
+
+.produto {
+  /* background-color: #FADADD; */
+  background-color: #DCE2C1;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+.produtoSabores {
+  /* background-color: #FADADD; */
+  background-color: #FFF8F0;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.produto img{
+    max-width: 100%;
+    height: 200px;
+}
+.produtoSabores img{
+  max-width: 100%;
+  height: 200px;
+}
+
+.produto:hover {
+  transform: scale(1.03);
+}
+
+/* === Formulário === */
+form {
+  display: grid;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+textarea{
+    font-family: arial;
+}
+
+.receita ul{
+    padding:0px 20px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #E3C1B8;
+  border-radius: 10px;
+  background-color: #FFF8F0;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.btn {
+  background-color: #D4AF37;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #b8952f;
+}
+
+/* === Receitas === */
+.receita {
+  background-color: #FFF8F0;
+  padding: 20px;
+  border-left: 4px solid #D4AF37;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* === Divisores === */
+.divider {
+  height: 2px;
+  background-color: #FADADD;
+  margin: 30px 0;
+}
+
+/* === Rodapé === */
+footer {
+  background-color: #FADADD;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #8B5E3C;
+}
+
+/* === Animações suaves === */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
