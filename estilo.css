@@ -385,3 +385,23 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* === Ícones de acessibilidade === */
+
+.icone {
+  width: 25px;
+  height: 25px;
+}
+
+.preto-e-branco {
+  filter: grayscale(100%);
+}
+
+.alto-contraste {
+  background-color: black;
+  color: white;
+
+  .alto-contraste a {
+    color: white;
+  }
+}

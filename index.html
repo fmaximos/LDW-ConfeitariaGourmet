@@ -13,6 +13,10 @@
   <header>
     <div class="nav-left">
       <img src="imagens/logo-confeitaria.png" alt="Logo Doces" height="50">
+      <button id="preto-e-branco"><img src="imagens/ico_preto_e_branco.png" class=icone></button>
+      <button id="a-mais"><img src="imagens/ico_a_mais.png" class=icone></button>
+      <button id="a-menos"><img src="imagens/ico_a_menos.png" class=icone></button>
+      <button id="alto-contraste"><img src="imagens/ico_alto_contraste.png" class=icone></button>
       <!-- <nav>
       </nav> -->
     </div>
@@ -535,6 +539,71 @@
     const secoesDetalhe = document.querySelectorAll(".produto-detalhe");
     secoesDetalhe.forEach(secao => secao.style.display = "none");
   }
+</script>
+
+    <!--Preto e Branco-->
+    <script>
+      document.getElementById('preto-e-branco').addEventListener('click',function()
+  {
+      document.body.classList.toggle('preto-e-branco')
+  });
+  </script>
+
+   <!--A+ e A--->
+   <script type="text/javascript">
+      window.onload = function()
+      {
+          //Seleciona o elemento <body> para que possamos alterar seu estilo.
+              var corpoDaPagina = document.querySelector('body');
+              var aumentarTexto = document.getElementById('a-mais');
+              var diminuirTexto = document.getElementById('a-menos');
+
+          //O padrão de tamanho equivale a 100% do valor definido no style.
+          var fontSize = 100;
+
+          //Valor percentual de 10% que irá aumentar ou diminuir do padrão da fonte.
+          var qntAumentarDiminuir = 10;
+
+          //Evento de Click para aumentar a fonte
+          aumentarTexto.addEventListener
+          ('click', function(event)
+      {
+          fontSize = fontSize + qntAumentarDiminuir;
+          corpoDaPagina.style.fontSize = fontSize + '%';
+      }
+      );
+
+      //Evento de Click para diminuir o tamnaho da fonte
+      diminuirTexto.addEventListener
+          ('click', function(event)
+         {
+          fontSize = fontSize - qntAumentarDiminuir;
+          corpoDaPagina.style.fontSize = fontSize + '%';
+      }
+  );
+  }
+   </script>
+
+<!--Alto Contraste-->
+<script>
+  document.getElementById('alto-contraste').addEventListener
+  ('click', function()
+{
+  document.body.classList.toggle('alto-contraste');
+}
+);
+</script>
+
+<!--Libras-->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
 
 </body>
